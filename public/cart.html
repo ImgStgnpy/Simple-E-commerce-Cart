@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart - Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">ShopEasy</div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/cart" class="cart-link">View Cart <span id="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h1>Shopping Cart</h1>
+    
+    <!-- Cart Items Section -->
+    <div class="cart-section">
+      <h2>Cart Items</h2>
+      <div id="cart-container" class="grid-container"></div>
+    </div>
+
+    <!-- Available Coupons Section -->
+    <div id="available-coupons">
+      <h2>Available Coupons</h2>
+      <div id="coupon-list" class="coupon-container"></div>
+    </div>
+
+    <!-- Apply Coupon Section -->
+    <div id="coupon-section">
+      <h2>Apply Coupon</h2>
+      <div class="coupon-input">
+        <input type="text" id="coupon-code" placeholder="Enter coupon code">
+        <button class="btn" onclick="applyCoupon()">Apply</button>
+      </div>
+      <div id="coupon-message"></div>
+    </div>
+
+    <!-- Cart Summary Section -->
+    <div id="cart-summary">
+      <h2>Cart Summary</h2>
+      <div id="cart-total">₹0</div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+  </footer>
+  
+  <div id="notification" class="notification"></div>
+  
+  <script src="js/cart.js"></script>
+</body>
+</html>
